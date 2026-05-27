@@ -5,7 +5,7 @@ Designed and simulated a 100 kVA smart Vehicle-to-Grid (V2G) and Grid-to-Vehicle
 
 ### System Architecture
 *(Insert your main Simulink circuit screenshot here)*
-`![Simulink Architecture](images/main_architecture.png)`
+![Simulink Architecture](main_architecture.png)
 * **Grid Interface:** 415V, 50Hz 3-phase grid connected to a Voltage Source Converter (VSC) via a custom-designed LCL filter (resonance at 581 Hz) to maintain IEEE 519 compliance.
 * **DC Link & Converters:** 800V shared DC bus regulating three independent 360V EV battery models through bidirectional Buck-Boost converters.
 * **Control Layer:** dq-current control with a Phase-Locked Loop (PLL) ensuring Unity Power Factor during G2V and exact 180-degree current reversal for V2G active power injection.
@@ -26,11 +26,11 @@ Engineered an algorithm allowing EVs to bypass the AC grid during high-price pea
 
 ### Performance Waveforms
 *(Insert Figure 6.4 from your thesis here)*
-`![Multi-EV SOC Coordination](images/SOC_coordination.png)`
+![Multi-EV SOC Coordination](SOC_coordination.png)
 *Figure: Multi-EV DC-bus coordination demonstrating Peer-to-Peer charging during high grid prices.*
 
 *(Insert Figure 6.5/6.6 from your thesis here)*
-`![Grid Power Factor](images/grid_waveforms.png)`
+![Grid Power Factor](grid_waveforms.png)
 *Figure: Grid-side waveforms demonstrating Unity Power Factor (PF = +1) with THD < 3%.*
 
 ### Tech Stack
